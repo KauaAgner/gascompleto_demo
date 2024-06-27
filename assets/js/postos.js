@@ -85,7 +85,7 @@ function criarHTMLPostos(postos, page) {
     currentPostos.forEach((posto, index) => {
         const postoHTML = `
             <div class="posto-card">
-                <img id="postoimg" src="../img/posto.png" alt="">
+                <img id="postoimg" src="../assets/img/posto.png" alt="">
                 <h5 id="nome-posto"><strong>${posto['Nome do posto']}</strong></h5>
                 <p><strong>Preço:</strong> ${posto.Preço}</p>
                 <p><strong>Tipo de combustível:</strong> ${posto['Tipo de combustível']}</p>
@@ -113,7 +113,7 @@ function redirectToDetails(index) {
 
 // Função para carregar dados do JSON e inicializar a página
 function carregarDados() {
-    fetch('../js/tabela.json')
+    fetch('../assets/js/tabela.json')
         .then(response => response.json())
         .then(data => {
             postosData = data;

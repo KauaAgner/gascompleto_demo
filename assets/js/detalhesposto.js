@@ -167,7 +167,7 @@ function getQueryParam(param) {
 
 // Função para redirecionar para a página do mapa com as coordenadas
 function redirectToMapPage() {
-    fetch('../js/tabela.json')
+    fetch('../assets/js/tabela.json')
         .then(response => response.json())
         .then(data => {
             const index = getQueryParam('index');
@@ -200,7 +200,7 @@ function redirectToMapPage() {
 
 
 // Carregar o JSON do arquivo e exibir os detalhes do posto
-fetch('../js/tabela.json')
+fetch('../assets/js/tabela.json')
     .then(response => response.json())
     .then(data => {
         const index = getQueryParam('index');
@@ -208,7 +208,7 @@ fetch('../js/tabela.json')
         if (posto) {
             const cabecalho = document.getElementById('posto-cabecalho');
             const postoCabecalhoHTML = `
-                <img id="postoimg" src="../img/posto.png" alt="">
+                <img id="postoimg" src="../assets/img/posto.png" alt="">
                 <p id="nome-posto"><strong>${posto['Nome do posto']}</strong></p>
             `;
 			

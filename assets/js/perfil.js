@@ -11,7 +11,7 @@ function carregarDadosUsuario() {
     document.getElementById('foto-perfil').src = userLogado.pic;
   } else {
     alert('Você precisa estar logado para acessar essa página.');
-    window.location.href = '/assets/html/signin.html';
+    window.location.href = 'signin.html';
   }
 }
 
@@ -99,5 +99,5 @@ function deslogar() {
   localStorage.removeItem('userLogado');
   localStorage.removeItem('token');
 
-  window.location.href = '/assets/html/home.html';
+  window.location.href = '../index.html';
 }
