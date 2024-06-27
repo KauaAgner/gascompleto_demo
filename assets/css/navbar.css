@@ -85,5 +85,9 @@ header{
     .perfil-usuario{
         margin-top: 20px;
     }
+
+    .container-fluid{
+        position: absolute;
+    }
 }
 /* FIM NAVBAR */
